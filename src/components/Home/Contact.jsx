@@ -10,7 +10,7 @@ const Contact = () => {
             <h1 className='text-[#DDDDDD] text-[18px] mt-6 font-semibold'>Name</h1>
             <div className=' mt-4'>
                 <input type='text' placeholder='' className='w-[900px] h-[35px] bg-[#111111] rounded-sm hover:bg-black outline-none'></input>
-            </div>
+            </div> 
  
             <h1 className='text-[#DDDDDD] text-[18px] mt-4 font-semibold'>E-mail</h1>
             <div className=' mt-4'>
