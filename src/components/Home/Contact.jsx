@@ -5,24 +5,24 @@ const Contact = () => {
     <div>
         <div className='px-[450px] py-44'>
             <h1 className='text-[40px] font-bold font-sans '>Contact</h1>
-            <p className='text-[18px] w-[900px] text-[#DDDDDD] mt-7'>If you have any questions or feedback about BlogEngine or our themes, please <strong className='text-[#04D772] text-[18px]'>visit our webiste</strong>. We value your feedback and would love to hear from you.</p>
+            <p className='text-[18px] w-[900px] text-[#DDDDDD] mt-7 font-semibold'>If you have any questions or feedback about BlogEngine or our themes, please <strong className='text-[#04D772] text-[18px]'>visit our webiste</strong>. We value your feedback and would love to hear from you.</p>
             <div className=''>
-            <h1 className='text-[#DDDDDD] text-[18px] mt-6'>Name</h1>
+            <h1 className='text-[#DDDDDD] text-[18px] mt-6 font-semibold'>Name</h1>
             <div className=' mt-4'>
                 <input type='text' placeholder='' className='w-[900px] h-[35px] bg-[#111111] rounded-sm hover:bg-black outline-none'></input>
             </div>
 
-            <h1 className='text-[#DDDDDD] text-[18px] mt-4'>E-mail</h1>
+            <h1 className='text-[#DDDDDD] text-[18px] mt-4 font-semibold'>E-mail</h1>
             <div className=' mt-4'>
             <input type='text' placeholder='' className='w-[900px] h-[35px] bg-[#111111] rounded-sm  hover:bg-black outline-none'></input>
             </div>
 
-            <h1 className='text-[#DDDDDD] text-[18px] mt-4'>Subject</h1>
+            <h1 className='text-[#DDDDDD] text-[18px] mt-4 font-semibold'>Subject</h1>
             <div className=' mt-4'>
             <input type='text' placeholder='' className='w-[900px] h-[35px] bg-[#111111] rounded-sm  hover:bg-black outline-none'></input>
             </div>
 
-            <h1 className='text-[#DDDDDD] text-[18px] mt-4'>Message</h1>
+            <h1 className='text-[#DDDDDD] text-[18px] mt-4 font-semibold'>Message</h1>
             <div className='mt-4'>
             <textarea type='text' placeholder='' className='w-[900px] h-[200px] bg-[#111111] rounded-sm  hover:bg-black outline-none'></textarea>
             </div>
