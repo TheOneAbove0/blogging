@@ -65,7 +65,7 @@ export default function Body() {
   <div className=' '>
     <div className='border border-green-500 rounded-3xl bg-green-500 text-black font-semibold  top-5 absolute right-2 px-3 py-2'>Travelling</div>
     <div className='text-white font-semibold bottom-28 absolute left-5'> April 29, 2023</div>
-    <div className='text-white font-semibold bottom-10 absolute left-5 text-2xl pr-8'> National Parks in Californi, A Guide for Nature Lovers</div>
+    <div className='text-white font-semibold bottom-10 absolute left-5 text-2xl pr-8'> National Parks in Californierew, A Guide for Nature Lovers</div>
   </div>
 </div>
 
