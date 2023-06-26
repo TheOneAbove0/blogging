@@ -29,7 +29,7 @@ const Contact = () => {
              </div>
             <button className='w-[60px] h-[40px]  rounded-md text-[14px] font-bold bg-[#028E62] hover:bg-black mt-3 ml-[838px] text-black'>Send</button>
         </div>
-    </div> 
+    </div>  
   )
 }
 
