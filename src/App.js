@@ -1,11 +1,12 @@
 import './App.css';
-import Contact from '../src/components/Home/Contact';
+import Slider from './Components/Home/Slider';
+
 function App() {
   return (
-    <div className='bg-[#1E1E1F] text-white'>
-     <Contact/>
-      </div>
-);
+    <div className="App">
+      <Slider />
+    </div>
+  );
 }
 
 export default App;
