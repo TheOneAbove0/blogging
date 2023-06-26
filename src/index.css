@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-button-prev {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  
+}
+
+.swiper-container:hover .swiper-button-next:hover,
+.swiper-container:hover .swiper-button-prev:hover {
+  color: white;
+  font-weight: bold;
+}
+

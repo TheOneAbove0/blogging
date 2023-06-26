@@ -1,9 +1,10 @@
 import './App.css';
+import Slider from './Components/Home/Slider';
 
 function App() {
   return (
     <div className="App">
-      fawsdxcvbffh
+      <Slider />
     </div>
   );
 }
