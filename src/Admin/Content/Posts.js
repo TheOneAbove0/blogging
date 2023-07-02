@@ -3,7 +3,7 @@ import { RiDeleteBin6Line } from 'react-icons/ri';
 import { FaNewspaper } from 'react-icons/fa';
 import { TiTick } from 'react-icons/ti';
 import { BsChevronDown } from 'react-icons/bs';
-import { MdCheckBoxOutlineBlank } from 'react-icons/md';
+
 import { BiLinkExternal } from 'react-icons/bi';
 import { BiPlusMedical } from 'react-icons/bi';
 
@@ -61,41 +61,45 @@ export default function Posts() {
   
   return (
     <div className='flex bg-gray-100'>
-      <div className=' bg-blue-500 w-1/5'>sdgsrg</div>
-      <div className=' w-4/5 flex flex-col'>
-        <div className='h-[50px] flex justify-between px-[40px] items-center bg-white'>
-    <div className='flex justify-center items-center gap-5'>
-  <div className='text-[18px]'>POSTS</div>
- <div className='w-[100px] bg-[#24b685] hover:bg-green-800 h-[30px] flex'>
+    <div className=' bg-blue-500 w-1/5'></div>
+    <div className=' w-4/5 flex flex-col'>
+      <div className='h-[50px] flex justify-between px-[40px] items-center bg-white'>
+  <div className='flex justify-center items-center gap-5'>
+<div className='text-[18px] text-black opacity-70'>POSTS</div>
+<div className='w-[100px] bg-[#24b685] hover:bg-green-800 h-[30px] flex'>
 <div className='w-[30px] text-white flex justify-center items-center'>
-  <BiPlusMedical className=''/>
+<BiPlusMedical className=''/>
 </div>
 <div className='w-[1px] bg-gray-500'></div>
 <div className='text-white flex justify-center items-center w-20'>NEW</div>
 
 
- </div>
-  
- <div className='w-[150px] h-[30px]  bg-white rounded-md flex gap-[0.1px] '>
+</div>
+
+<div className='w-[150px] h-[30px]  bg-white rounded-md flex gap-[0.1px] '>
 <div className={`w-1/3 bg-red-600 text-white flex justify-center items-center border ${
-allChecked || justChecked.one ? 'opacity-100' : 'opacity-70'
+allChecked || justChecked.one || justChecked.two || justChecked.three || justChecked.four || justChecked.five || justChecked.six || justChecked.seven || justChecked.eight || justChecked.nine || justChecked.ten ? 'opacity-100' : 'opacity-50'
 }`}>
 <RiDeleteBin6Line/>
 </div>
 <div className={`w-1/3 bg-yellow-400 text-white text-xl flex justify-center items-center border ${
- allChecked || justChecked.one ? 'opacity-100' : 'opacity-70'
+allChecked || justChecked.one || justChecked.two || justChecked.three || justChecked.four || justChecked.five || justChecked.six || justChecked.seven || justChecked.eight || justChecked.nine || justChecked.ten ? 'opacity-100' : 'opacity-50'
 }`}>
 <FaNewspaper/>
 </div>
 <div className={`w-1/3 bg-green-600 text-white text-2xl flex justify-center items-center border ${
-allChecked || justChecked.one ? 'opacity-100' : 'opacity-70'
+allChecked || justChecked.one || justChecked.two || justChecked.three || justChecked.four || justChecked.five || justChecked.six || justChecked.seven || justChecked.eight || justChecked.nine || justChecked.ten ? 'opacity-100' : 'opacity-50'
 }`}>
 <TiTick/>
 </div>
- </div>
 </div>
- <div className='flex justify-center items-center gap-5'>
- <div className='w-[80px] h-[30px] rounded-sm bg-white-600 flex  '>
+
+
+
+
+</div>
+<div className='flex justify-center items-center gap-5'>
+<div className='w-[80px] h-[30px] rounded-sm bg-white-600 flex  '>
 <div className='w-2/3 bg-white text-black flex justify-center items-center border border-gray-400'>
 ALL
 </div>
@@ -103,17 +107,21 @@ ALL
 <BsChevronDown/>
 </div>
 
- </div>
- <div className='w-[40px] h-[30px] rounded-sm bg-white flex border
-  border-gray-400  justify-center items-center text-[25px] '>
+</div>
+<div className='w-[40px] h-[30px] rounded-sm bg-white flex border
+border-gray-400  justify-center items-center text-[25px] '>
 
 <AiOutlineSearch/>
 
- </div>
-  </div>
-        </div>
-        <div className='bg-gray-200 h-1'></div>
+</div>
+</div>
+      </div>
+      <div className='bg-gray-200 h-1'></div>
 
+
+
+
+    
 
 
 

@@ -3,7 +3,7 @@ import { RiDeleteBin6Line } from 'react-icons/ri';
 import { FaNewspaper } from 'react-icons/fa';
 import { TiTick } from 'react-icons/ti';
 import { BsChevronDown } from 'react-icons/bs';
-import { MdCheckBoxOutlineBlank } from 'react-icons/md';
+
 import { BiLinkExternal } from 'react-icons/bi';
 import { BiPlusMedical } from 'react-icons/bi';
 import { BsFillPersonFill } from 'react-icons/bs';
@@ -66,7 +66,7 @@ export default function Posts() {
       <div className=' w-4/5 flex flex-col'>
         <div className='h-[50px] flex justify-between px-[40px] items-center bg-white'>
     <div className='flex justify-center items-center gap-5'>
-  <div className='text-[18px]'>Comments</div>
+  <div className='text-[18px] text-black opacity-70'>COMMENTS</div>
  <div className='w-[100px] bg-[#24b685] hover:bg-green-800 h-[30px] flex'>
 <div className='w-[30px] text-white flex justify-center items-center'>
   <BiPlusMedical className=''/>
@@ -79,17 +79,17 @@ export default function Posts() {
   
  <div className='w-[150px] h-[30px]  bg-white rounded-md flex gap-[0.1px] '>
 <div className={`w-1/3 bg-red-600 text-white flex justify-center items-center border ${
-allChecked || justChecked.one ? 'opacity-100' : 'opacity-50'
+allChecked || justChecked.one || justChecked.two || justChecked.three || justChecked.four || justChecked.five || justChecked.six || justChecked.seven || justChecked.eight || justChecked.nine || justChecked.ten ? 'opacity-100' : 'opacity-50'
 }`}>
 <RiDeleteBin6Line/>
 </div>
 <div className={`w-1/3 bg-yellow-400 text-white text-xl flex justify-center items-center border ${
- allChecked || justChecked.one ? 'opacity-100' : 'opacity-50'
+ allChecked || justChecked.one || justChecked.two || justChecked.three || justChecked.four || justChecked.five || justChecked.six || justChecked.seven || justChecked.eight || justChecked.nine || justChecked.ten ? 'opacity-100' : 'opacity-50'
 }`}>
 <FaNewspaper/>
 </div>
 <div className={`w-1/3 bg-green-600 text-white text-2xl flex justify-center items-center border ${
-allChecked || justChecked.one ? 'opacity-100' : 'opacity-50'
+allChecked || justChecked.one || justChecked.two || justChecked.three || justChecked.four || justChecked.five || justChecked.six || justChecked.seven || justChecked.eight || justChecked.nine || justChecked.ten ? 'opacity-100' : 'opacity-50'
 }`}>
 <TiTick/>
 </div>
@@ -165,7 +165,7 @@ onChange={handleCheckboxChange}/>
   </div>
   <div className='w-[40px] flex justify-center items-center bg-white '><BsFillPersonFill className='h-9 w-14 text-gray-400 opacity-50'/></div>
   <div className='bg-white w-[560px] flex justify-between pl-2 items-center pr-2'>
-    <div className=' text-blue-700 text-[13.8px]  '>AI powered Personal Assistant for Windows</div>
+    <div className=' text-blue-700 text-[13.8px]  '>Windows Copilot sounds like a game-changer for businesses!</div>
     <div><BiLinkExternal/></div>
     </div>
     <div className='bg-white text-gray-400 flex justify-center 
@@ -207,7 +207,7 @@ onChange={handleCheckboxChange}/>
   </div>
   <div className='w-[40px] flex justify-center items-center bg-white '><BsFillPersonFill className='h-9 w-14 text-gray-400 opacity-50'/></div>
   <div className='bg-white w-[560px] flex justify-between pl-2 items-center pr-2'>
-    <div className=' text-blue-700 text-[13.8px]  '>AI powered Personal Assistant for Windows</div>
+    <div className=' text-blue-700 text-[13.8px]  '>I’m impressed by the range of tasks that Windows Copilot can handle.</div>
     <div><BiLinkExternal/></div>
     </div>
     <div className='bg-white text-gray-400 flex justify-center 
@@ -249,7 +249,7 @@ onChange={handleCheckboxChange}/>
   </div>
   <div className='w-[40px] flex justify-center items-center bg-white '><BsFillPersonFill className='h-9 w-14 text-gray-400 opacity-50'/></div>
   <div className='bg-white w-[560px] flex justify-between pl-2 items-center pr-2'>
-    <div className=' text-blue-700 text-[13.8px]  '>AI powered Personal Assistant for Windows</div>
+    <div className=' text-blue-700 text-[13.8px]  '>I’m impressed by Einride’s commitment to decarbonizing the freight industry. </div>
     <div><BiLinkExternal/></div>
     </div>
     <div className='bg-white text-gray-400 flex justify-center 
@@ -289,46 +289,7 @@ onChange={handleCheckboxChange}/>
   </div>
   <div className='w-[40px] flex justify-center items-center bg-white '><BsFillPersonFill className='h-9 w-14 text-gray-400 opacity-50'/></div>
   <div className='bg-white w-[560px] flex justify-between pl-2 items-center pr-2'>
-    <div className=' text-blue-700 text-[13.8px]  '>AI powered Personal Assistant for Windows</div>
-    <div><BiLinkExternal/></div>
-    </div>
-    <div className='bg-white text-gray-400 flex justify-center 
-  items-center w-[120px] text-[13.8px]'>2023-06-20</div>
-  <div className='bg-white w-[90px] flex justify-center items-center '>
-  <div className='bg-white text-gray-400 flex justify-center 
-  items-center w-[60px] text-[13.8px]'>56</div>
-  </div>
-  
-  <div className='bg-white w-[90px] flex items-center justify-center'>
-  <div className='bg-gray-500 rounded-sm opacity-70 w-[14px] h-[14px] flex justify-center items-center text-[20px]'>
-      <TiTick className='text-white
-   font-semibold opacity-70'/>
-     </div>
-     
-    </div>
-   
-    <div className='bg-white w-[72.5px] flex justify-center items-center'>
-    <input type='checkbox' ></input>
-    </div>
-</div>
-
-<div className='h-[0.1px] bg-gray-300'></div>
-
-<div className='h-[1px] bg-gray-300'></div>
-
-
-<div className='h-[0.1px] bg-gray-300'></div>
-<div className='bg-gray-300 flex gap-[1px] h-[40px]  '>
- <div className='w-[0.1px] '></div>
-  <div className='bg-white w-[60px] flex items-center justify-center'>  
-  <input type='checkbox'
-   name="two"
-   checked={justChecked.two}
-   onChange={handleCheckboxChange} /> 
-  </div>
-  <div className='w-[40px] flex justify-center items-center bg-white '><BsFillPersonFill className='h-9 w-14 text-gray-400 opacity-50'/></div>
-  <div className='bg-white w-[560px] flex justify-between pl-2 items-center pr-2'>
-    <div className=' text-blue-700 text-[13.8px]  '>AI powered Personal Assistant for Windows</div>
+    <div className=' text-blue-700 text-[13.8px]  '> I’ve been looking for a way to improve the search capabilities of my .NET app</div>
     <div><BiLinkExternal/></div>
     </div>
     <div className='bg-white text-gray-400 flex justify-center 
@@ -406,6 +367,45 @@ onChange={handleCheckboxChange}/>
   </div>
   <div className='w-[40px] flex justify-center items-center bg-white '><BsFillPersonFill className='h-9 w-14 text-gray-400 opacity-50'/></div>
   <div className='bg-white w-[560px] flex justify-between pl-2 items-center pr-2'>
+    <div className=' text-blue-700 text-[13.8px]  '>This article was very interesting and well-written. </div>
+    <div><BiLinkExternal/></div>
+    </div>
+    <div className='bg-white text-gray-400 flex justify-center 
+  items-center w-[120px] text-[13.8px]'>2023-06-20</div>
+  <div className='bg-white w-[90px] flex justify-center items-center '>
+  <div className='bg-white text-gray-400 flex justify-center 
+  items-center w-[60px] text-[13.8px]'>56</div>
+  </div>
+  
+  <div className='bg-white w-[90px] flex items-center justify-center'>
+  <div className='bg-gray-500 rounded-sm opacity-70 w-[14px] h-[14px] flex justify-center items-center text-[20px]'>
+      <TiTick className='text-white
+   font-semibold opacity-70'/>
+     </div>
+     
+    </div>
+   
+    <div className='bg-white w-[72.5px] flex justify-center items-center'>
+    <input type='checkbox' ></input>
+    </div>
+</div>
+
+<div className='h-[0.1px] bg-gray-300'></div>
+
+<div className='h-[1px] bg-gray-300'></div>
+
+
+<div className='h-[0.1px] bg-gray-300'></div>
+<div className='bg-gray-300 flex gap-[1px] h-[40px]  '>
+ <div className='w-[0.1px] '></div>
+  <div className='bg-white w-[60px] flex items-center justify-center'>  
+  <input type='checkbox'
+   name="two"
+   checked={justChecked.two}
+   onChange={handleCheckboxChange} /> 
+  </div>
+  <div className='w-[40px] flex justify-center items-center bg-white '><BsFillPersonFill className='h-9 w-14 text-gray-400 opacity-50'/></div>
+  <div className='bg-white w-[560px] flex justify-between pl-2 items-center pr-2'>
     <div className=' text-blue-700 text-[13.8px]  '>AI powered Personal Assistant for Windows</div>
     <div><BiLinkExternal/></div>
     </div>
@@ -484,7 +484,7 @@ onChange={handleCheckboxChange}/>
   </div>
   <div className='w-[40px] flex justify-center items-center bg-white '><BsFillPersonFill className='h-9 w-14 text-gray-400 opacity-50'/></div>
   <div className='bg-white w-[560px] flex justify-between pl-2 items-center pr-2'>
-    <div className=' text-blue-700 text-[13.8px]  '>AI powered Personal Assistant for Windows</div>
+    <div className=' text-blue-700 text-[13.8px]  '>I especially liked the part about investing in yourself and never stop learning.</div>
     <div><BiLinkExternal/></div>
     </div>
     <div className='bg-white text-gray-400 flex justify-center 
@@ -523,7 +523,7 @@ onChange={handleCheckboxChange}/>
   </div>
   <div className='w-[40px] flex justify-center items-center bg-white '><BsFillPersonFill className='h-9 w-14 text-gray-400 opacity-50'/></div>
   <div className='bg-white w-[560px] flex justify-between pl-2 items-center pr-2'>
-    <div className=' text-blue-700 text-[13.8px]  '>AI powered Personal Assistant for Windows</div>
+    <div className=' text-blue-700 text-[13.8px]  '>I am interested in having a smart home but I don’t know where to start.</div>
     <div><BiLinkExternal/></div>
     </div>
     <div className='bg-white text-gray-400 flex justify-center 
