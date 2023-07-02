@@ -10,12 +10,12 @@ export default function Dashboard() {
 
   return (
     <div className=" flex ">
-      <div className=" w-[240px] ">
+      {/* <div className=" w-[240px] ">
         <SideBar />
-      </div>
+      </div> */}
 
   
-    <div className=" ml-[240px] min-w-[1280px] ">
+    <div className=" ml-[240px] w-[1400px] ">
      
       <div className=" flex border-b justify-between items-center text-[#707f95] px-[30px] py-[18px] font-normal ">
         <p className="text-[#666] ">DASHBOARD</p>

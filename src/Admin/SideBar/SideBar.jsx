@@ -79,7 +79,7 @@ export default function SideBar() {
             {activeItem === "content" && (
               <div className=" flex flex-col pl-10 mt-4 gap-1 items-start text-[14px] ">
                 <li
-                  className={`w-full h-[25px] ${
+                  className={`w-full h-[25px]  ${
                     activeContent === "posts"
                       ? "text-[#c9cdd3]"
                       : "text-[#74808f]"

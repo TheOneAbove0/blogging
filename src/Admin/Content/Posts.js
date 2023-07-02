@@ -57,11 +57,11 @@ export default function Posts() {
   };
 
   return (
-    <div className="flex bg-gray-100">
-      <div className="  w-[240px]">
+    <div className="flex  bg-gray-100">
+      {/* <div className="  w-[240px]">
         <SideBar />
-      </div>
-      <div className=" w-4/5 flex flex-col">
+      </div> */}
+      <div className=" w-4/5 ml-[240px] flex flex-col">
         <div className="h-[50px] flex justify-between px-[40px] items-center bg-white">
           <div className="flex justify-center items-center gap-5">
             <div className="text-[18px]">POSTS</div>
@@ -165,7 +165,7 @@ export default function Posts() {
             </div>
             <div className="bg-white w-[100px] flex justify-center items-center ">
               <div
-                className="bg-green-700 rounded-3xl text-white
+                className="bg-[#24b685] text-[12px] rounded-3xl text-white
      font-bold w-[25px] h-[20px] flex justify-center items-center"
               >
                 2
@@ -212,7 +212,7 @@ export default function Posts() {
             </div>
             <div className="bg-white w-[100px] flex justify-center items-center ">
               <div
-                className="bg-green-700 rounded-3xl text-white
+                className="bg-[#24b685] text-[12px] rounded-3xl text-white
      font-bold w-[25px] h-[20px] flex justify-center items-center"
               >
                 3
@@ -260,8 +260,8 @@ export default function Posts() {
             </div>
             <div className="bg-white w-[100px] flex justify-center items-center ">
               <div
-                className="bg-green-700 rounded-3xl text-white
-     font-bold w-[25px] h-[20px] flex justify-center items-center"
+                className="bg-[#24b685] rounded-3xl text-white
+     font-bold w-[25px] h-[20px] text-[12px] flex justify-center items-center"
               >
                 5
               </div>
@@ -308,7 +308,7 @@ export default function Posts() {
             </div>
             <div className="bg-white w-[100px] flex justify-center items-center ">
               <div
-                className="bg-green-700 rounded-3xl text-white
+                className="bg-[#24b685] text-[12px] rounded-3xl text-white
      font-bold w-[25px] h-[20px] flex justify-center items-center"
               >
                 5
@@ -356,7 +356,7 @@ export default function Posts() {
             </div>
             <div className="bg-white w-[100px] flex justify-center items-center ">
               <div
-                className="bg-green-700 rounded-3xl text-white
+                className="bg-[#24b685] text-[12px] rounded-3xl text-white
      font-bold w-[25px] h-[20px] flex justify-center items-center"
               >
                 2
@@ -404,7 +404,7 @@ export default function Posts() {
             </div>
             <div className="bg-white w-[100px] flex justify-center items-center ">
               <div
-                className="bg-green-700 rounded-3xl text-white
+                className="bg-[#24b685] text-[12px] rounded-3xl text-white
      font-bold w-[25px] h-[20px] flex justify-center items-center"
               >
                 1
@@ -451,7 +451,7 @@ export default function Posts() {
             </div>
             <div className="bg-white w-[100px] flex justify-center items-center ">
               <div
-                className="bg-green-700 rounded-3xl text-white
+                className="bg-[#24b685] text-[12px] rounded-3xl text-white
      font-bold w-[25px] h-[20px] flex justify-center items-center"
               >
                 2
@@ -498,7 +498,7 @@ export default function Posts() {
             </div>
             <div className="bg-white w-[100px] flex justify-center items-center ">
               <div
-                className="bg-green-700 rounded-3xl text-white
+                className="bg-[#24b685] text-[12px] rounded-3xl text-white
      font-bold w-[25px] h-[20px] flex justify-center items-center"
               >
                 6
@@ -545,7 +545,7 @@ export default function Posts() {
             </div>
             <div className="bg-white w-[100px] flex justify-center items-center ">
               <div
-                className="bg-green-700 rounded-3xl text-white
+                className="bg-[#24b685] text-[12px] rounded-3xl text-white
      font-bold w-[25px] h-[20px] flex justify-center items-center"
               >
                 4
@@ -592,7 +592,7 @@ export default function Posts() {
             </div>
             <div className="bg-white w-[100px] flex justify-center items-center ">
               <div
-                className="bg-green-700 rounded-3xl text-white
+                className="bg-[#24b685] text-[12px] rounded-3xl text-white
      font-bold w-[25px] h-[20px] flex justify-center items-center"
               >
                 2

@@ -51,11 +51,11 @@ export default function Pages() {
   };
 
   return (
-    <div className="flex bg-gray-100">
-      <div className="  w-[240px]">
+    <div className="flex  bg-gray-100">
+      {/* <div className="  w-[240px]">
         <SideBar />
-      </div>
-      <div className=" w-4/5 flex flex-col">
+      </div> */}
+      <div className=" w-4/5 ml-[240px] flex flex-col">
         <div className="h-[50px] flex justify-between px-[40px] items-center bg-white">
           <div className="flex justify-center items-center gap-5">
             <div className="text-[18px] text-black opacity-60">PAGES</div>
