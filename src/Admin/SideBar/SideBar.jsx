@@ -71,7 +71,7 @@ export default function SideBar() {
           >
             <div className=" flex items-center gap-6   ">
               <IoReorderFour className="w-[17px] h-[17px]" />
-              <Link to="admin/posts">
+              <Link to="admin/content/posts">
                 <p>CONTENT</p>
               </Link>
             </div>
@@ -86,7 +86,7 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("posts")}
                 >
-                  <Link to="admin/posts">Posts</Link>
+                  <Link to="admin/content/posts">Posts</Link>
                   
                 </li>
                 <li
@@ -97,7 +97,7 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("comments")}
                 >
-                  <Link to="admin/comments">Comments</Link>
+                  <Link to="admin/content/comments">Comments</Link>
                   
                 </li>
                 <li
@@ -108,7 +108,7 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("pages")}
                 >
-                  <Link to="admin/pages">Pages</Link>
+                  <Link to="admin/content/pages">Pages</Link>
                   
                 </li>
                 <li
@@ -119,7 +119,8 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("categories")}
                 >
-                  Categories
+                   <Link to="admin/content/categories">Categories</Link>
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -129,7 +130,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("tags")}
                 >
-                  Tags
+                   <Link to="admin/content/tags">Tags</Link>
+
+                  
                 </li>
               </div>
             )}
@@ -142,7 +145,9 @@ export default function SideBar() {
           >
             <div className="flex items-center gap-6">
               <RiListSettingsFill className="w-[17px] h-[17px]" />
-              <p>CUSTOM</p>
+              <Link to="admin/custom/themes"><p>CUSTOM</p></Link>
+
+              
             </div>
 
             {activeItem === "custom" && (
@@ -155,7 +160,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("themes")}
                 >
-                  Themes
+                 <Link to="admin/custom/themes">Themes</Link>
+
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -165,7 +172,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("plugins")}
                 >
-                  Plugins
+                 <Link to="admin/custom/plugins">Plugins</Link>
+
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -175,7 +184,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("pages")}
                 >
-                  Pages
+              <Link to="admin/custom/pages">Pages</Link>
+
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -185,7 +196,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("widgets")}
                 >
-                  Widgets
+              <Link to="admin/custom/widgets">Widgets</Link>
+
+                  
                 </li>
               </div>
             )}
@@ -199,7 +212,9 @@ export default function SideBar() {
           >
             <div className=" flex items-center gap-6  ">
               <BsFillPersonFill className="w-[17px] h-[17px]" />
-              <p>USERS</p>
+              <Link to="admin/users/profile"><p>USERS</p></Link>
+
+              
             </div>
             {activeItem === "users" && (
               <div className=" flex flex-col pl-10 mt-4 gap-1 items-start text-[14px] ">
@@ -211,7 +226,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("profile")}
                 >
-                  Profile
+              <Link to="admin/users/profile">Profile</Link>
+
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -219,7 +236,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("roles")}
                 >
-                  Roles
+              <Link to="admin/users/roles">Roles</Link>
+                  
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -227,7 +246,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("users")}
                 >
-                  Users
+              <Link to="admin/users/users">Users</Link>
+                  
+                  
                 </li>
               </div>
             )}
@@ -240,7 +261,9 @@ export default function SideBar() {
           >
             <div className=" flex items-center gap-6  ">
               <AiTwotoneSetting className="w-[17px] h-[17px]" />
-              <p>SETTINGS</p>
+              <Link to="admin/setting/basic"><p>SETTINGS</p></Link>
+
+              
             </div>
             {activeItem === "settings" && (
               <div className=" flex flex-col pl-10 mt-4 gap-1 items-start text-[14px]">
@@ -252,7 +275,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("basic")}
                 >
-                  Basic
+              <Link to="admin/setting/basic">Basic</Link>
+
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -262,7 +287,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("e-mail")}
                 >
-                  E-mail
+              <Link to="admin/setting/email">E-mail</Link>
+
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -272,7 +299,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("feed")}
                 >
-                  Feed
+              <Link to="admin/setting/feed">Feed</Link>
+
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -282,7 +311,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("comments")}
                 >
-                  Comments
+              <Link to="admin/setting/comments">Comments</Link>
+
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -292,7 +323,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("controls")}
                 >
-                  Controls
+                <Link to="admin/setting/controls">Controls</Link>
+
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -302,7 +335,9 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("advanced")}
                 >
-                  Advanced
+                <Link to="admin/setting/advance">Advanced</Link>
+                  
+                  
                 </li>
               </div>
             )}

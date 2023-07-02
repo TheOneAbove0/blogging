@@ -8,6 +8,26 @@ import Comments from "./Admin/Content/Comments";
 import Pages from "./Admin/Content/Pages";
 import SideBar from "./Admin/SideBar/SideBar";
 
+//import from setings
+
+import Advance from './Admin/Settings/Advanced';
+import Basic from './Admin/Settings/Basic';
+import Controls from './Admin/Settings/Controls';
+import Email from './Admin/Settings/Email';
+import Feed from './Admin/Settings/Feed';
+
+
+//import from the users 
+import Profile from './Admin/User/Profile';
+import Users from './Admin/User/Users';
+import Roles from './Admin/User/Roles';
+
+//import custom from 
+// import Themes from './Admin/Custom/Themes';
+// import Plugin from './Admin/Custom/Plugin';
+// import Pages from './Admin/Custom/Pages';
+// import Widgets from './Admin/Custom/Widgets';
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -16,9 +36,50 @@ const App = () => {
         <Routes>
           <Route path="/admin/">
             <Route index element={<Dashboard />} />
+
+
+            {/* content here */}
+
+            <Route path ="content/">
             <Route path="posts" element={<Posts />} />
             <Route path="comments" element={<Comments />} />
             <Route path="pages" element={<Pages />} />
+            {/* <Route path="categories" element={<Categories />} />
+            <Route path="tags" element={<Tags />} /> */}
+            </Route>
+
+
+            {/* user here  */}
+
+            <Route path ="users/">
+            <Route path="profile" element={<Profile />} />
+            <Route path="users" element={<Users />} />
+            <Route path="roles" element={<Roles />} />
+            </Route>
+
+             {/* custom here  */}
+
+             {/* <Route path ="custom/">
+            <Route path="themes" element={<Themes />} />
+            <Route path="plugin" element={<Plugin />} />
+            <Route path="pages" element={<Pages />} />
+            <Route path="widgets" element={<Widgets />} />
+            </Route> */}
+
+
+            {/* setings here */}
+
+            <Route path ="setting/">
+            <Route path="posts" element={<Basic />} />
+            <Route path="email" element={<Email />} />
+            <Route path="feed" element={<Feed />} />
+            <Route path="controls" element={<Controls />} />
+            <Route path="advance" element={<Advance />} />
+            </Route>
+
+
+
+
           </Route>
         </Routes>
       </div>
@@ -28,19 +89,4 @@ const App = () => {
 
 export default App;
 
-{
-  /* <Route path="/admin/#/content/categories" component={Categories} />
-        <Route path="/admin/#/content/tags" component={Tags} />
-        <Route path="/admin/#/custom/themes" component={Themes} />
-        <Route path="/admin/#/custom/plugins" component={Plugins} />
-        <Route path="/admin/#/custom/widgets" component={Widgets} />
-        <Route path="/admin/#/security/profile" component={Profile} />
-        <Route path="/admin/#/security/roles" component={Roles} />
-        <Route path="/admin/#/security/users" component={Users} />
-        <Route path="/admin/#/settings/basic" component={BasicSettings} />
-        <Route path="/admin/#/settings/email" component={EmailSettings} />
-        <Route path="/admin/#/settings/feed" component={FeedSettings} />
-        <Route path="/admin/#/settings/comments" component={CommentsSettings} />
-        <Route path="/admin/#/settings/controls" component={ControlsSettings} />
-        <Route path="/admin/#/settings/advanced" component={AdvancedSettings} /> */
-}
+

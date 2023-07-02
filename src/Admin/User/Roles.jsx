@@ -4,10 +4,10 @@ import { RiDeleteBin6Line } from 'react-icons/ri';
 function Roles() {
   return (
     <div className='flex'>
-      <div className='w-[240px] h-[600px] bg-red-500'>
+      {/* <div className='w-[240px] h-[600px] bg-red-500'>
         left
-      </div>
-      <div className='min-w-[1400px]'>
+      </div> */}
+      <div className='ml-[240px] w-[1400px]'>
         <div className='flex items-center justify-between p-[20px] border-[1px] bg-white'>
           <div className='flex gap-4 items-center'>
             <div className='text-[16px]'>ROLES</div>

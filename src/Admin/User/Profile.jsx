@@ -2,16 +2,16 @@ import React from 'react'
 import { BsCheck, BsImage } from 'react-icons/bs';
 import { AiFillCloseCircle,AiFillPlusSquare } from 'react-icons/ai';
 import {BiPlusMedical } from 'react-icons/bi';
-import admin from '../../images/admin.jpg'
+import admin from '../../assets/images/admin.jpg'
 function Profile() {
   return (
 
     <div className='flex  '>
-      <div className='w-[240px] h-[600px] bg-red-500'>
+      {/* <div className='w-[240px] h-[600px] bg-red-500'>
         left
-      </div>
-      <div className='bg-[#f6f6f6] '>
-        <div className='flex gap-[10px]  p-[20px] bg-white w-[1400px]'>
+      </div> */}
+      <div className=' bg-[#f6f6f6] ml-[240px] '>
+        <div className='flex   gap-[10px]  p-[20px] bg-white w-[1400px]'>
           <div className='text-[16px]'>MY PROFILE</div>
           <div className='flex items-center justify-between bg-[#70cfb0] p-[0px] text-white'>
             <BsCheck className='text-[25px] border-r-[1px] border-green-600' />

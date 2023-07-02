@@ -6,11 +6,11 @@ import { AiOutlineLine } from 'react-icons/ai';
 function Users() {
   return (
     <div className='flex'>
-      <div className='w-[240px] h-[600px] bg-red-500'>
+      {/* <div className='w-[240px] h-[600px] bg-red-500'>
         left
-      </div>
-      <div className='bg-[#f6f6f6] W-[1400px]'>
-      <div className='w-[1400px]'>
+      </div> */}
+      <div className='bg-[#f6f6f6] ml-[240px] '>
+      <div className=' w-[1280px]'>
       <div className='flex items-center justify-between p-[20px] border-[1px] bg-white'>
           <div className='flex gap-4 items-center'>
             <div className='text-[16px]'>USERS</div>
