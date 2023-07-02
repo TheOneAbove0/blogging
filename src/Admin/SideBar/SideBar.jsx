@@ -11,6 +11,7 @@ import { FaGlobeAmericas } from "react-icons/fa";
 import { RiDashboardFill, RiListSettingsFill } from "react-icons/ri";
 import { AiTwotoneSetting, AiFillInfoCircle } from "react-icons/ai";
 import Dashboard from "../Dashboard/Dashboard";
+import { Link } from "react-router-dom";
 
 export default function SideBar() {
   const [activeItem, setActiveItem] = useState("dashboard");
@@ -18,8 +19,6 @@ export default function SideBar() {
   const [activeContent, setActiveContext] = useState("posts");
   const [activeSetting, setActiveSetting] = useState("basic");
   const [activeUser, setActiveUser] = useState("profile");
-
-
 
   const handleItemClick = (itemName) => {
     setActiveItem(itemName);
@@ -59,7 +58,10 @@ export default function SideBar() {
             onClick={() => handleItemClick("dashboard")}
           >
             <RiDashboardFill className="w-[17px] h-[17px]" />
+            <Link to="admin">
             <p>DASHBOARD</p>
+              </Link>
+           
           </li>
           <li
             className={`list-none cursor-pointer p-[25px] py-[20px]  ${
@@ -69,7 +71,9 @@ export default function SideBar() {
           >
             <div className=" flex items-center gap-6   ">
               <IoReorderFour className="w-[17px] h-[17px]" />
-              <p>CONTENT</p>
+              <Link to="admin/posts">
+                <p>CONTENT</p>
+              </Link>
             </div>
 
             {activeItem === "content" && (
@@ -82,7 +86,8 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("posts")}
                 >
-                  Posts
+                  <Link to="admin/posts">Posts</Link>
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -92,7 +97,8 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("comments")}
                 >
-                  Comments
+                  <Link to="admin/comments">Comments</Link>
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -102,7 +108,8 @@ export default function SideBar() {
                   }`}
                   onClick={() => handleChildClick("pages")}
                 >
-                  Pages
+                  <Link to="admin/pages">Pages</Link>
+                  
                 </li>
                 <li
                   className={`w-full h-[25px] ${
@@ -196,24 +203,32 @@ export default function SideBar() {
             </div>
             {activeItem === "users" && (
               <div className=" flex flex-col pl-10 mt-4 gap-1 items-start text-[14px] ">
-                <li className={`w-full h-[25px] ${
+                <li
+                  className={`w-full h-[25px] ${
                     activeUser === "profile"
                       ? "text-[#c9cdd3]"
                       : "text-[#74808f]"
                   }`}
-                  onClick={() => handleChildClick("profile")}>Profile</li>
-                <li className={`w-full h-[25px] ${
-                    activeUser === "roles"
-                      ? "text-[#c9cdd3]"
-                      : "text-[#74808f]"
+                  onClick={() => handleChildClick("profile")}
+                >
+                  Profile
+                </li>
+                <li
+                  className={`w-full h-[25px] ${
+                    activeUser === "roles" ? "text-[#c9cdd3]" : "text-[#74808f]"
                   }`}
-                  onClick={() => handleChildClick("roles")}>Roles</li>
-                <li className={`w-full h-[25px] ${
-                    activeUser === "users"
-                      ? "text-[#c9cdd3]"
-                      : "text-[#74808f]"
+                  onClick={() => handleChildClick("roles")}
+                >
+                  Roles
+                </li>
+                <li
+                  className={`w-full h-[25px] ${
+                    activeUser === "users" ? "text-[#c9cdd3]" : "text-[#74808f]"
                   }`}
-                  onClick={() => handleChildClick("users")}>Users</li>
+                  onClick={() => handleChildClick("users")}
+                >
+                  Users
+                </li>
               </div>
             )}
           </li>
@@ -229,42 +244,66 @@ export default function SideBar() {
             </div>
             {activeItem === "settings" && (
               <div className=" flex flex-col pl-10 mt-4 gap-1 items-start text-[14px]">
-                <li className={`w-full h-[25px] ${
+                <li
+                  className={`w-full h-[25px] ${
                     activeSetting === "basic"
                       ? "text-[#c9cdd3]"
                       : "text-[#74808f]"
                   }`}
-                  onClick={() => handleChildClick("basic")}>Basic</li>
-                <li className={`w-full h-[25px] ${
+                  onClick={() => handleChildClick("basic")}
+                >
+                  Basic
+                </li>
+                <li
+                  className={`w-full h-[25px] ${
                     activeSetting === "e-mail"
                       ? "text-[#c9cdd3]"
                       : "text-[#74808f]"
                   }`}
-                  onClick={() => handleChildClick("e-mail")}>E-mail</li>
-                <li className={`w-full h-[25px] ${
+                  onClick={() => handleChildClick("e-mail")}
+                >
+                  E-mail
+                </li>
+                <li
+                  className={`w-full h-[25px] ${
                     activeSetting === "feed"
                       ? "text-[#c9cdd3]"
                       : "text-[#74808f]"
                   }`}
-                  onClick={() => handleChildClick("feed")}>Feed</li>
-                <li className={`w-full h-[25px] ${
+                  onClick={() => handleChildClick("feed")}
+                >
+                  Feed
+                </li>
+                <li
+                  className={`w-full h-[25px] ${
                     activeSetting === "comments"
                       ? "text-[#c9cdd3]"
                       : "text-[#74808f]"
                   }`}
-                  onClick={() => handleChildClick("comments")}>Comments</li>
-                <li className={`w-full h-[25px] ${
+                  onClick={() => handleChildClick("comments")}
+                >
+                  Comments
+                </li>
+                <li
+                  className={`w-full h-[25px] ${
                     activeSetting === "controls"
                       ? "text-[#c9cdd3]"
                       : "text-[#74808f]"
                   }`}
-                  onClick={() => handleChildClick("controls")}>Controls</li>
-                <li className={`w-full h-[25px] ${
+                  onClick={() => handleChildClick("controls")}
+                >
+                  Controls
+                </li>
+                <li
+                  className={`w-full h-[25px] ${
                     activeSetting === "advanced"
                       ? "text-[#c9cdd3]"
                       : "text-[#74808f]"
                   }`}
-                  onClick={() => handleChildClick("advanced")}>Advanced</li>
+                  onClick={() => handleChildClick("advanced")}
+                >
+                  Advanced
+                </li>
               </div>
             )}
           </li>
@@ -279,7 +318,7 @@ export default function SideBar() {
           </li>
         </div>
       </div>
-      <Dashboard />
+      {/* <Dashboard /> */}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillWarning } from "react-icons/ai";
+import SideBar from "../SideBar/SideBar";
 
 export default function Dashboard() {
 
@@ -8,6 +9,12 @@ export default function Dashboard() {
     const str3 = 'As a resident of the UAE, I’m thrilled to hear about this collaboration between Einride and our government. It’s encouraging to see efforts being made to reduce emissions and promote sustainable shipping in our region.';
 
   return (
+    <div className=" flex ">
+      <div className=" w-[240px] ">
+        <SideBar />
+      </div>
+
+  
     <div className=" ml-[240px] min-w-[1280px] ">
      
       <div className=" flex border-b justify-between items-center text-[#707f95] px-[30px] py-[18px] font-normal ">
@@ -74,6 +81,7 @@ export default function Dashboard() {
         </div>
 
       </div>
+    </div>
     </div>
   );
 }
