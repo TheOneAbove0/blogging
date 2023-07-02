@@ -21,7 +21,7 @@ export default function SideBar() {
 
   return (
     <div className=" flex ">
-    <div className="w-[240px] h-screen text-[#74808f] bg-[#282c37]">
+    <div className="w-[240px] min-h-full fixed text-[#74808f] bg-[#282c37]">
       <div className="flex gap-3 items-center p-[15px]">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUOHxFwT91eq2tMGj1MRvWwTOo_j4mkQw3Vw&usqp=CAU"
@@ -41,7 +41,7 @@ export default function SideBar() {
       <div className="flex flex-col">
         <li
           className={`flex items-center gap-6 list-none cursor-pointer p-[25px] py-[20px]  ${
-            activeItem === "dashboard" ? "bg-[#22252e]" : ""
+            activeItem === "dashboard" ? "bg-[#22252e] text-[#c9cdd3]" : ""
           }`}
           onClick={() => handleItemClick("dashboard")}
         >
@@ -50,7 +50,7 @@ export default function SideBar() {
         </li>
         <li
           className={`list-none cursor-pointer p-[25px] py-[20px]  ${
-            activeItem === "content" ? "bg-[#22252e]" : ""
+            activeItem === "content" ? "bg-[#22252e] text-[#c9cdd3]" : ""
           }`}
           onClick={() => handleItemClick("content")}
         >
@@ -71,7 +71,7 @@ export default function SideBar() {
         </li>
         <li
           className={` list-none cursor-pointer p-[25px] py-[20px]  ${
-            activeItem === "custom" ? "bg-[#22252e]" : ""
+            activeItem === "custom" ? "bg-[#22252e] text-[#c9cdd3]" : ""
           }`}
           onClick={() => handleItemClick("custom")}
         >
@@ -91,7 +91,7 @@ export default function SideBar() {
         </li>
         <li
           className={` list-none cursor-pointer p-[25px] py-[20px]  ${
-            activeItem === "users" ? "bg-[#22252e]" : ""
+            activeItem === "users" ? "bg-[#22252e] text-[#c9cdd3]" : ""
           }`}
           onClick={() => handleItemClick("users")}
         >
@@ -109,7 +109,7 @@ export default function SideBar() {
         </li>
         <li
           className={`list-none cursor-pointer p-[25px] py-[20px]  ${
-            activeItem === "settings" ? "bg-[#22252e]" : ""
+            activeItem === "settings" ? "bg-[#22252e] text-[#c9cdd3]" : ""
           }`}
           onClick={() => handleItemClick("settings")}
         >
@@ -130,7 +130,7 @@ export default function SideBar() {
         </li>
         <li
           className={`flex items-center gap-6 list-none cursor-pointer p-[25px] py-[20px] ${
-            activeItem === "about" ? "bg-[#22252e]" : ""
+            activeItem === "about" ? "bg-[#22252e] text-[#c9cdd3]" : ""
           }`}
           onClick={() => handleItemClick("about")}
         >
