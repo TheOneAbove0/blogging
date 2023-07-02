@@ -1,10 +1,11 @@
+import SideBar from './Admin/SideBar/SideBar';
 import './App.css';
-import Slider from './Components/Home/Slider';
+
 
 function App() {
   return (
     <div className="App">
-      <Slider />
+     <SideBar />
     </div>
   );
 }
