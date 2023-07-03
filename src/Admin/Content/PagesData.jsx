@@ -1,7 +1,40 @@
-import React from 'react'
+const pages = [
+  { id: 1,
+  title: 'Custom Themes', 
+  parent: 'About' ,
+  sortOrder:0,
+  date:"2023-05-30",
+  },
+  { id: 2,
+  title: 'Marketing Themes', 
+  parent: 'About' ,
+  sortOrder:0,
+  date:"2023-05-30",
+  },
+  { id: 3,
+    title: 'About', 
+  parent: 'Example' ,
+  sortOrder:0,
+  date:"2023-05-30",
+  },
+  { id: 4,
+    title: 'One', 
+  
+  sortOrder:0,
+  date:"2023-05-30",
+  },
+  { id: 5,
+    title: 'Two', 
+  
+  sortOrder:0,
+  date:"2023-05-30",
+  },
+  { id: 6,
+    title: 'Three', 
+  
+  sortOrder:0,
+  date:"2023-05-30",
+  },
+];
 
-export default function PagesData() {
-  return (
-    <div>PagesData</div>
-  )
-}
+export default pages;
