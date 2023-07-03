@@ -4,10 +4,10 @@ import { AiOutlineMail} from 'react-icons/ai';
 const Email = () => {
   return (
     <div className='flex'>
-      <div className='w-[240px] bg-red-600'>
+      {/* <div className='w-[240px] bg-red-600'>
 left
-      </div>
-      <div className='bg-[#f6f6f6] w-screen'>
+      </div> */}
+      <div className='bg-[#f6f6f6] ml-[240px] w-[1400px]'>
       <div className='flex gap-[20px] item-center p-[20px] bg-white'>
           <div className='text-[18px]'>E-MAIL</div>
           <div className='flex items-center justify-between cursor-pointer bg-[#70cfb0] p-[0px] text-white hover:bg-green-800'>

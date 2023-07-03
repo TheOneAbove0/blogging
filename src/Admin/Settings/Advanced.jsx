@@ -3,10 +3,10 @@ import { BsCheck, BsPlus } from 'react-icons/bs';
 const Advanced = () => {
   return (
     <div className='flex'>
-      <div className='w-[240px]  bg-red-600'>
+      {/* <div className='w-[240px]  bg-red-600'>
         left
-      </div>
-      <div className='w-[1400px] bg-[#f6f6f6]'>
+      </div> */}
+      <div className='w-[1400px] ml-[240px] bg-[#f6f6f6]'>
       <div className='flex gap-[10px]  p-[20px] bg-white'>
           <div className='text-[16px]'>MY PROFILE</div>
           <div className='flex items-center justify-between bg-[#70cfb0] p-[0px] text-white'>
