@@ -17,12 +17,12 @@ export default Themes
 const Navbar = () => {
     return (
       <div>
-      <div className='flex items-center justify-between ml-72 my-3 '>
+      <div className='flex items-center justify-between border-b pb-4 ml-[240px] my-3 '>
           <div className='flex items-center gap-8 mx-6'>
             <h1 className='text-[#666666] text-[16px] text-xl'>THEMES</h1>
             <div className='flex items-center gap-3 bg-[#1C8B66] w-[90px] h-[30px] rounded-sm p-2 cursor-pointer'>
                 <BiPlusMedical className=' text-white '/>
-                <hr className='border-[#BEBEBE]   h-[30px] border-[1px] '></hr>
+                <hr className='border-[#BEBEBE]   h-[30px] border '></hr>
                 <h1 className='text-[12px] text-white'>NEW</h1>
             </div>
           </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
            <BiSearch className='text-lg text-gray-500'/>
            </div>
              </div>
-             <hr className=" border-[1px] mt-5 ml-72 border-[#BEBEBE]"></hr>
+             {/* <hr className=" border-[1px] mt-5 ml-[240px] border-[#BEBEBE]"></hr> */}
       </div>
     )
   }
@@ -38,7 +38,7 @@ const Navbar = () => {
 
   const Middlebar = () => {
     return (
-      <div className="ml-72  bg-[#F6F6F6]" >
+      <div className="ml-[240px]  bg-[#F6F6F6]" >
         <div className=" p-7 ">
           <h1 className='text-[14px] text-[#66666F]'>Check out our <strong className='text-[#2376BB] text-[14px]'>new high quality themes</strong>, also you can <strong className='text-[#2376BB] text-[14px]'>order your custom theme</strong>.</h1>
         </div>
