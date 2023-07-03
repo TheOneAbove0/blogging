@@ -23,10 +23,10 @@ import Users from './Admin/User/Users';
 import Roles from './Admin/User/Roles';
 
 //import custom from 
-// import Themes from './Admin/Custom/Themes';
-// import Plugin from './Admin/Custom/Plugin';
+import Themes from './Admin/Custom/Themes';
+import Plugin from './Admin/Custom/Plugins';
 // import Pages from './Admin/Custom/Pages';
-// import Widgets from './Admin/Custom/Widgets';
+import Widgets from './Admin/Custom/Widgets';
 
 const App = () => {
   return (
@@ -59,12 +59,12 @@ const App = () => {
 
              {/* custom here  */}
 
-             {/* <Route path ="custom/">
+             <Route path ="custom/">
             <Route path="themes" element={<Themes />} />
-            <Route path="plugin" element={<Plugin />} />
-            <Route path="pages" element={<Pages />} />
+           <Route path="plugin" element={<Plugin />} />
+             {/* <Route path="pages" element={<Pages />} />*/}
             <Route path="widgets" element={<Widgets />} />
-            </Route> */}
+            </Route> 
 
 
             {/* setings here */}
