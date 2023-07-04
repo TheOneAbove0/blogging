@@ -3,7 +3,7 @@ import { BsCheck } from "react-icons/bs";
 
 const Basic = () => {
   return (
-    <div className="bg-[#f6f6f6] ml-[240px] w-[1400px] h-[97vh]">
+    <div className="bg-[#f6f6f6] ml-[240px] h-[97vh]">
       <div className="flex gap-[20px] item-center p-[20px] bg-white">
         <div className="text-[18px]">BASIC</div>
         <div className="flex items-center justify-between cursor-pointer bg-[#70cfb0] p-[0px] text-white hover:bg-green-800">
