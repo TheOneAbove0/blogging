@@ -70,7 +70,7 @@ const App = () => {
             {/* setings here */}
 
             <Route path ="setting/">
-            <Route path="posts" element={<Basic />} />
+            <Route path="basic" element={<Basic />} />
             <Route path="email" element={<Email />} />
             <Route path="feed" element={<Feed />} />
             <Route path="controls" element={<Controls />} />
