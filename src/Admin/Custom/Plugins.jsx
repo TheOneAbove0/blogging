@@ -7,7 +7,7 @@ const Plugins = () => {
   return (
     <div>
       <Navbar />
-      <Middlebar />
+      <Middlebar /> 
     </div> 
   );
 };
