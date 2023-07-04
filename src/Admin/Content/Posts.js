@@ -112,8 +112,8 @@ export default function Posts() {
           </div>
 
           {posts.map((item) => (
-            <div className='flex flex-col w-[1050px]'>
-            <div key={item.id} className="bg-gray-300 flex gap-[1px] h-[40px] w-[1050px]">
+            <div key={item.id} className='flex flex-col w-[1050px]'>
+            <div  className="bg-gray-300 flex gap-[1px] h-[40px] w-[1050px]">
               <div className="w-[0.1px]"></div>
               <div className="bg-white w-[60px] flex items-center justify-center">
                 <input
