@@ -16,7 +16,7 @@ export default Plugins;
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between ml-72 mt-3 border-b-[2px] pb-4">
+    <div className="flex items-center justify-between ml-[240px] mt-3 border-b-[2px] pb-4">
       <div className="flex items-center  mx-6">
         <h1 className="text-[#666666] text-[16px] text-xl">PLUGINS</h1>
         <div className="flex items-center gap-3 bg-[#1C8B66] w-[90px] h-[30px] rounded-sm p-2 cursor-pointer ml-5 divide-x">
@@ -47,7 +47,7 @@ const Navbar = () => {
 const Middlebar = () => {
   return (
     <div>
-      <div className="ml-72 bg-[#F6F6F6] h-[92vh] p-9 ">
+      <div className="ml-[240px] bg-[#F6F6F6] h-[92vh] p-9 ">
         <div className="w-[1180px] h-[367px] border   ">
           <div className="flex items-center border-b pb-1 pt-2">
             <div className="w-[15px] h-[15px] border-[1px] bg-[#FFFFFF] rounded-sm border-gray-500 ml-4 m-3 shadow-md"></div>
