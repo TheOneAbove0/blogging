@@ -61,7 +61,7 @@ const App = () => {
 
              <Route path ="custom/">
             <Route path="themes" element={<Themes />} />
-           <Route path="plugin" element={<Plugin />} />
+           <Route path="plugins" element={<Plugin />} />
              {/* <Route path="pages" element={<Pages />} />*/}
             <Route path="widgets" element={<Widgets />} />
             </Route> 
