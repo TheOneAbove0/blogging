@@ -31,7 +31,7 @@ import Widgets from './Admin/Custom/Widgets';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App"> 
         <SideBar />
         <Routes>
           <Route path="/admin/">
